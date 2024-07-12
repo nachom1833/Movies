@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="./assets/Iconos/clapperboard_4240150.png">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+   
+
+    <title>CAC-MOVIES</title>
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="naveg">
+
+            <a href="#main" class="logo">
+                <img src="./assets/Iconos/film-solid.svg" aria-hidden="true" height="20vw" alt="movie">
+                <span>CAC-Movies</span>
+            </a>
+
+            <div class="container">
+
+                <div class="item">
+                    <a href="#tendencias" class="navLink">Tendencias</a>
+                </div>
+
+                <div class="item">
+                    <a href="./formularioRegistro.html" class="navLink">Registrarse</a>
+                </div>
+
+                <div class="inicio">
+                    <a href="./formularioIngreso.html" class="navInicio">Iniciar Sesion</a>
+                </div>            
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main id="main" class="main">
+        <section class="principal">
+            <section class="banner">
+                <h1>Películas y series ilimitadas
+                    <br>
+                    en un solo lugar
+                </h1>
+                <h2>Disfruta donde quieras.
+                    <br>
+                    Cancela en cualquier momento.
+                </h2>
+                <a class="botonRegistro" href="./formularioRegistro.html">Registrate</a>
+            </section>
+        </section>
+
+
+        <section class="buscador">
+            <h3 class="tituloSection">¿Qué estas buscando para ver?</h3>
+            <article>
+                <form>
+                    <label for="buscador"></label>
+                    <input class="barraBusqueda" type="text" size="50" placeholder="Buscar..." name="buscador"
+                        id="buscador">
+                    <input type="button" class="botonBusqueda" value="Buscar">
+                </form>
+            </article>
+
+        </section>
+        <!-- Seccion Tendencias -->
+        <hr>
+
+        <section id="tendencias">
+            <h3 class="tituloSection">Las tendencias de hoy</h3>
+            <div class="peliculas" id="tendenciasContainer">
+                <!--
+                <div class="peliculas"><a href="./pages/detalle.html">
+                        <div class="pelicula"><img class="imgTendencia"
+                                src="https://image.tmdb.org/t/p/w500//gmGK5Gw5CIGMPhOmTO0bNA9Q66c.jpg"
+                                alt="Godzilla x Kong: The New Empire" loading="lazy">
+                            <div class="tituloPelicula">
+                                <h4>Godzilla x Kong: The New Empire</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                    
+                <div class="peliculas"><a href="./pages/detalle.html">
+                        <div class="pelicula"><img class="imgTendencia"
+                                src="https://image.tmdb.org/t/p/w500//kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg"
+                                alt="Kung Fu Panda 4" loading="lazy">
+                            <div class="tituloPelicula">
+                                <h4>Kung Fu Panda 4</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="peliculas"><a href="./pages/detalle.html">
+                        <div class="pelicula"><img class="imgTendencia"
+                                src="https://image.tmdb.org/t/p/w500//1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg"
+                                alt="Dune: Part Two" loading="lazy">
+                            <div class="tituloPelicula">
+                                <h4>Dune: Part Two</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="peliculas"><a href="./pages/detalle.html">
+                        <div class="pelicula"><img class="imgTendencia"
+                                src="https://image.tmdb.org/t/p/w500//hu40Uxp9WtpL34jv3zyWLb5zEVY.jpg" alt="No Way Up"
+                                loading="lazy">
+                            <div class="tituloPelicula">
+                                <h4>No Way Up</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="peliculas"><a href="./pages/detalle.html">
+                        <div class="pelicula"><img class="imgTendencia"
+                                src="https://image.tmdb.org/t/p/w500//8QVDXDiOGHRcAD4oM6MXjE0osSj.jpg" alt="Alienoid"
+                                loading="lazy">
+                            <div class="tituloPelicula">
+                                <h4>Alienoid</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="peliculas"><a href="./pages/detalle.html">
+                        <div class="pelicula"><img class="imgTendencia"
+                                src="https://image.tmdb.org/t/p/w500//bXi6IQiQDHD00JFio5ZSZOeRSBh.jpg" alt="Road House"
+                                loading="lazy">
+                            <div class="tituloPelicula">
+                                <h4>Road House</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="peliculas"><a href="./pages/detalle.html">
+                        <div class="pelicula"><img class="imgTendencia"
+                                src="https://image.tmdb.org/t/p/w500//ldfCF9RhR40mppkzmftxapaHeTo.jpg" alt="Migration"
+                                loading="lazy">
+                            <div class="tituloPelicula">
+                                <h4>Migration</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="peliculas"><a href="./pages/detalle.html">
+                        <div class="pelicula"><img class="imgTendencia"
+                                src="https://image.tmdb.org/t/p/w500//tMO0YLXgJZBnIAjoTSz26zE33YN.jpg" alt="Damaged"
+                                loading="lazy">
+                            <div class="tituloPelicula">
+                                <h4>Damaged</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="peliculas"><a href="./pages/detalle.html">
+                        <div class="pelicula"><img class="imgTendencia"
+                                src="https://image.tmdb.org/t/p/w500//wTW2t8ocWDlHns8I7vQxuqkyK58.jpg" alt="Breathe"
+                                loading="lazy">
+                            <div class="tituloPelicula">
+                                <h4>Breathe</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="peliculas"><a href="./pages/detalle.html">
+                        <div class="pelicula"><img class="imgTendencia"
+                                src="https://image.tmdb.org/t/p/w500//jFK2ZLQUzo9pea0jfMCHDfvWsx7.jpg"
+                                alt="The Wages of Fear" loading="lazy">
+                            <div class="tituloPelicula">
+                                <h4>The Wages of Fear</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="peliculas"><a href="./pages/detalle.html">
+                        <div class="pelicula"><img class="imgTendencia"
+                                src="https://image.tmdb.org/t/p/w500//cxevDYdeFkiixRShbObdwAHBZry.jpg"
+                                alt="Rebel Moon - Part Two: The Scargiver" loading="lazy">
+                            <div class="tituloPelicula">
+                                <h4>Rebel Moon - Part Two: The Scargiver</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="peliculas"><a href="./pages/detalle.html">
+                        <div class="pelicula"><img class="imgTendencia"
+                                src="https://image.tmdb.org/t/p/w500//rULWuutDcN5NvtiZi4FRPzRYWSh.jpg" alt="Madame Web"
+                                loading="lazy">
+                            <div class="tituloPelicula">
+                                <h4>Madame Web</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="peliculas"><a href="./pages/detalle.html">
+                        <div class="pelicula"><img class="imgTendencia"
+                                src="https://image.tmdb.org/t/p/w500//zIAF0UXtCJTJOYNYWiBfyifaaOi.jpg" alt="Outsource"
+                                loading="lazy">
+                            <div class="tituloPelicula">
+                                <h4>Outsource</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="peliculas"><a href="./pages/detalle.html">
+                        <div class="pelicula"><img class="imgTendencia"
+                                src="https://image.tmdb.org/t/p/w500//p1LbrdJ53dGfEhRopG71akfzOVu.jpg"
+                                alt="After the Pandemic" loading="lazy">
+                            <div class="tituloPelicula">
+                                <h4>After the Pandemic</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="peliculas"><a href="./pages/detalle.html">
+                        <div class="pelicula"><img class="imgTendencia"
+                                src="https://image.tmdb.org/t/p/w500//y2Aimt8isimtigec3e4kB2G9FMR.jpg" alt="Hard Hit"
+                                loading="lazy">
+                            <div class="tituloPelicula">
+                                <h4>Hard Hit</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="peliculas"><a href="./pages/detalle.html">
+                        <div class="pelicula"><img class="imgTendencia"
+                                src="https://image.tmdb.org/t/p/w500//mMnzNYvpqLLLdgF5TMmXfuy6wzx.jpg"
+                                alt="Woody Woodpecker Goes to Camp" loading="lazy">
+                            <div class="tituloPelicula">
+                                <h4>Woody Woodpecker Goes to Camp</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="peliculas"><a href="./pages/detalle.html">
+                        <div class="pelicula"><img class="imgTendencia"
+                                src="https://image.tmdb.org/t/p/w500//sh7Rg8Er3tFcN9BpKIPOMvALgZd.jpg" alt="Civil War"
+                                loading="lazy">
+                            <div class="tituloPelicula">
+                                <h4>Civil War</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="peliculas"><a href="./pages/detalle.html">
+                        <div class="pelicula"><img class="imgTendencia"
+                                src="https://image.tmdb.org/t/p/w500//rtosxP5sXuoRFPH4sVbMccLIPiV.jpg"
+                                alt="The Three Musketeers: Milady" loading="lazy">
+                            <div class="tituloPelicula">
+                                <h4>The Three Musketeers: Milady</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="peliculas"><a href="./pages/detalle.html">
+                        <div class="pelicula"><img class="imgTendencia"
+                                src="https://image.tmdb.org/t/p/w500//uoBHsxSgfc3PQsSn98RfnbePHOy.jpg"
+                                alt="The Tearsmith" loading="lazy">
+                            <div class="tituloPelicula">
+                                <h4>The Tearsmith</h4>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="peliculas"><a href="./pages/detalle.html">
+                        <div class="pelicula"><img class="imgTendencia"
+                                src="https://image.tmdb.org/t/p/w500//ccJpK0rqzhQeP7Mrs2uKqObFY4L.jpg"
+                                alt="Creation of the Gods I: Kingdom of Storms" loading="lazy">
+                            <div class="tituloPelicula">
+                                <h4>Creation of the Gods I: Kingdom of Storms</h4>
+                            </div>
+                        </div>
+                    </a></div>
+
+                    -->
+
+            </div>
+            <div class="contenedorBotones">
+                <button class="botonanterior" id="botonanterior">Anterior</button>
+                <button class="botonsiguiente" id="botonsiguiente">Siguiente</button>
+            </div>
+        </section>
+
+        <hr>
+        <!-- Termina seccion tendencia -->
+
+        <!-- Seccion Mas Aclamadas -->
+
+        <div class="masAclamadas">
+            <div class="tituloAclamadas">
+                <h3 class="tituloSection">Las mas aclamadas</h3>
+            </div>
+            <div class="imagenesAclamadas">
+                <div><img src="./assets/img/aclamada_1.jpg" alt=""></div>
+                <div><img src="./assets/img/aclamada_2.jpg" alt=""></div>
+                <div><img src="./assets/img/aclamada_3.jpg" alt=""></div>
+                <div><img src="./assets/img/aclamada_4.jpg" alt=""></div>
+                <div><img src="./assets/img/aclamada_5.jpg" alt=""></div>
+                <div><img src="./assets/img/aclamada_6.jpg" alt=""></div>
+                <div><img src="./assets/img/aclamada_7.jpg" alt=""></div>
+                <div><img src="./assets/img/aclamada_8.jpg" alt=""></div>
+                <div><img src="./assets/img/aclamada_9.jpg" alt=""></div>
+                <div><img src="./assets/img/aclamada_10.jpg" alt=""></div>
+                <div><img src="./assets/img/aclamada_11.jpg" alt=""></div>
+                <div><img src="./assets/img/aclamada_12.jpg" alt=""></div>
+
+            </div>
+
+        </div>
+
+         <!-- Termina Mas Aclamadas -->
+
+
+
+        <footer class="footer">
+
+            <nav class="navega">
+                <div class="container2">
+                    <div class=" item2">
+                        <a href="" class="linkitem"> Terminos y Condiciones</a>
+                    </div>
+
+                    <div class="item2">
+                        <a href="" class="linkitem"> Preguntas Frecuentes</a>
+                    </div>
+
+                    <div class=" item2">
+                        <a href="" class="linkitem"> Ayuda</a>
+                    </div>
+
+                    <!-- CAMBIO: adm.pelis por usuarios reg. -->
+                    <div class=" inicio">
+                        <a href="./usuariosregistrados.html" class="navLink">Usuarios Registrados</a>
+                    </div>
+                </div>
+
+            </nav>
+            <a href="#main" class="arriba">
+                <img src="./assets/img/flecha-hacia-arriba.png" alt="ir arriba">
+            </a>
+        </footer>
+
+        <script src="./js/index.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+    </main>
+
+    </body>
+
+</html>

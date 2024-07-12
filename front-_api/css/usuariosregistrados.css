@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1rem;
+    scrollbar-width: thin;
+    scrollbar-color: #9f3647 black;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: black;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #9f3647;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+@keyframes animacion-formulario {
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+html, body {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    flex-direction: column;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../assets/img/bg-register.jpg);
+    background-size: cover;
+    background-color: grey;
+    color: white;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.naveg {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 1.5rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.logo img {
+    margin-right: 0.5rem;
+}
+
+.contenedor {
+    display: flex;
+    background-color: rgb(42, 42, 42);
+    
+    height: auto;
+    margin: auto;
+    padding: 1rem;
+    animation-name: animacion-formulario;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.nombre, .apellido, .email, .contrasena {
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    border: 3% solid #9f3647;
+    background-color: #333333;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.enviar {
+    background-color: #9f3647;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Table container styles */
+.tablaRegistrados {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.tablaRegistrados {
+    overflow: auto;
+    max-height: 50vh; /* Adjust the height as per your design */
+
+}
+
+.tablaRegistrados table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.tablaRegistrados th, .tablaRegistrados td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+.tablaRegistrados th {
+    background-color: #9f3647;
+    color: white;
+}
+
+.tablaRegistrados tr:nth-child(even) {
+    background-color: #333333;
+}
+
+.tablaRegistrados tr:nth-child(odd) {
+    background-color: #444444;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+.error {
+    color: red;
+    margin-bottom: 1rem;
+}

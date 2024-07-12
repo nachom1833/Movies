@@ -1,0 +1,368 @@
+* {
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #181419;
+    height: 80vh;
+}
+
+:link {
+    color: white;
+    text-decoration: none;
+}
+
+hr {
+    border: 1px solid #9f3647;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    unicode-bidi: isolate;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+@keyframes move-shaking {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(5px, 5px) rotate(5deg);
+    }
+
+    50% {
+        transform: translate(0, 0) rotate(0eg);
+    }
+
+    75% {
+        transform: translate(-5px, 5px) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+/* ESCRITORIO */
+
+header {
+    background-color: #9f3647;
+    color: #ffffff;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.naveg {
+    color: white;
+    background-color: #9f3647;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+.logo {
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    color: #ffffff;
+
+    &:hover {
+        animation: move-shaking 0.25s infinite;
+    }
+}
+
+.container {
+    height: 3%;
+    display: inline-flex;
+    align-items: rigth;
+    font-weight: 700;
+    margin: 10px;
+    margin-right: 4rem;
+}
+
+.item {
+    margin: 1rem;
+    padding: 0.5rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    .navLink {
+        color: #ffffff;
+
+    }
+
+    &:hover {
+        transform: scale(0.95);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        border-radius: 0.5rem;
+    }
+}
+
+.inicio {
+    margin: 1rem;
+    padding: 0.5rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    background-color: black;
+    border-radius: 5px;
+    transition: transform 0.5s, box-shadow 0.5s;
+
+    &:hover {
+        background-color: #9f3647;
+        transform: scale(0.95);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+    }
+}
+
+h1 {
+    color: white;
+    font-size: 6vh;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-size: 5vh;
+    text-align: center;
+}
+
+h3 {
+    font-size: 4vh;
+}
+
+
+
+
+
+.marioDetalles {
+    height: 90vh;
+    padding-top: 30vh;
+    padding-bottom: 10vh;
+    padding-left: 20vh;
+    padding-right: 20vh;
+
+    /* background-image: url(/ProyectoCAC/assets/img/mario-bg.jpg); */
+    background-image: url(../assets/img/mario-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-color: #6c6c6c;
+    text-align: left;
+    align-items: center;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+
+    .resumen
+    tituloClasificacion {
+        padding: 5vh;
+    }
+
+
+    .directorEscritor {
+        padding: 2vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+    }
+
+    .posterMario img {
+
+        display: flexbox;
+        flex-direction: column;
+        box-sizing: content-box;
+        border-radius: 20px;
+
+    }
+}
+
+
+
+
+.trailerInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin:5vw;
+    padding-top: 10vh;
+}
+
+.redesDatos {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.infoTitulo {
+    height: 5vh;
+    margin: 2rem;
+}
+
+.items {
+    font-size: 2vw;
+    height: 5vh;
+    margin: 2rem;
+    padding: 1vw;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.enlacesRedes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+.redes img {
+    height: 5vw;
+    margin: 2vw;
+}
+
+
+
+/* TELEFONO/TABLET */
+
+@media (max-width: 768px) {
+    .header {
+        height: initial;
+    }
+
+    .naveg {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-top: 1rem;
+    }
+
+    .marioDetalles {
+        flex-direction: column;
+        height: initial;
+    }
+
+    .trailerInfo {
+        flex-direction: column;
+        height: initial;
+    }
+
+    .containerMarioVideo iframe {
+        height: 171px;
+        width: 304px;
+    }
+
+
+}
+
+/*ESCRITORIO*/
+.footer {
+    background-color: #9f3647;
+    text-decoration: none;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    /* height: 100%; */
+    height: 10vh;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+
+.navega {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    height: 10rem;
+    width: 100%;
+    background-color: #9F3647;
+}
+
+.container2 {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 700;
+
+    height: fit-content;
+}
+
+
+
+.linkitem {
+    color: white;
+    margin: 1rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/*TELEFONO/TABLET*/
+
+@media (max-width: 768px) {
+
+
+    .footer {
+        height: initial;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    .linkitem {
+        font-size: 1rem;
+    }
+
+    .inicio {
+        padding: 0.5rem 0.8rem;
+    }
+
+}

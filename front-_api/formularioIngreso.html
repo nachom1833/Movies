@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso</title>
+    <link rel="stylesheet" type="text/css" href="css/formularioingreso.css">
+    <link rel="icon" href="./assets/Iconos/clapperboard_4240150.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="naveg" >
+            <a href="./index.html" class="logo">
+                <img src="./assets/Iconos/film-solid.svg" aria-hidden="true" height="20vw" alt="movie">
+                <span>CAC-Movies</span>            
+            </a>
+        </nav>
+    </header>
+    <div class=contenedor>
+        <div class="titulo">
+            <h2>Iniciar Sesion</h2>
+        </div>
+        <div class="formulario">
+            <form id="formularioingreso" method="post">
+                <input class="email" type="text" name="email" id="email" placeholder="E-mail">
+                <br>
+                <span id="erroremail" class="error"></span>
+                <br>
+                <input class="contrasena" type="password" id="contrasena" name="contrasena" placeholder="Contraseña">
+                <br>
+                <span id="errorcontrasena" class="error"></span>
+                <br>
+                <input class="iniciar" type="submit" value="Iniciar sesion">
+            </form>
+        </div>
+        <div class="registrarse">
+            <a href="./formularioRegistro.html">Registrarse</a>
+        </div>
+    </div>
+
+    <script src="./js/formularioingreso.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usuarios Registrados</title>
+  <link rel="stylesheet" type="text/css" href="css/usuariosregistrados.css">
+  <link rel="icon" href="./assets/Iconos/clapperboard_4240150.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="naveg">
+      <a href="./index.html" class="logo">
+        <img src="./assets/Iconos/film-solid.svg" aria-hidden="true" height="20vw" alt="movie">
+        <span>CAC-Movies</span>
+      </a>
+    </nav>
+  </header>
+
+  <div class="contenedor">
+
+    <div class="titulo">
+      <h1> Administrador de Usuarios Registrados</h1>
+    </div>
+
+    <div class="formulario">
+      <form id="usuariosregistrados" method="post">
+        <input class="nombre" type="text" name="nombre" id="nombre" placeholder="Nombre">
+        <br>
+        <span id="errornombre" class="error"></span>
+        <br>
+        <input class="apellido" type="text" name="apellido" id="apellido" placeholder="Apellido">
+        <br>
+        <span id="errorapellido" class="error"></span>
+        <br>
+        <input class="email" type="text" name="email" id="email" placeholder="E-mail">
+        <br>
+        <span id="erroremail" class="error"></span>
+        <br>
+        <input class="contrasena" type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
+        <br>
+        <span id="errorcontrasena" class="error"></span>
+        <br>
+        <input class="enviar" type="submit" value="Cargar" id="submit">
+        <!-- <input class="enviar" type="button" value="Eliminar Usuario" id="delete"> -->
+      </form>
+    </div>
+    <div class="tablaRegistrados">
+      <table >
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Email</th>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+  <script src="js/usuariosregistrados.js"></script>
+
+</body>
+
+</html>
